@@ -44,3 +44,11 @@ private:
         }
         queue_array[REAR] = num;
     }
+     void remove()
+    {
+        // ccek apakah antrian kosong
+        if (FRONT == -1)
+        {
+            cout << "Queue underflow\n";
+            return;
+        }
